@@ -1,0 +1,31 @@
+# Personal learner state: scores, mistakes, session notes, profile.
+# Kept on your machine (or in a separate private repo), never in this public repo.
+learner/
+
+# Commercial or restricted source material: prep books, answer keys, marking grids, audio.
+*.pdf
+*.epub
+*.mp3
+*.m4a
+*.wav
+*.ogg
+*.mp4
+sources/
+private/
+
+# Local list of book titles / publishers the pre-commit check blocks (private on purpose)
+.source-patterns
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# LanguageTool build output
+tools/languagetool/lib/
+tools/languagetool/target/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
