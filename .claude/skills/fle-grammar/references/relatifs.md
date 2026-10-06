@@ -12,7 +12,9 @@ The choice depends on the job the pronoun does in the relative clause, not on wh
 | **dont** | replaces de + noun | le livre dont je parle (parler de), la chose dont j'ai besoin, un ami dont le père est médecin |
 | preposition + **qui** (people) / **lequel, laquelle, lesquels, lesquelles** (things) | after à, avec, pour, sur, chez… | l'ami avec qui je voyage, la raison pour laquelle je pars |
 
-- **à + lequel → auquel, auxquels, auxquelles**; de + lequel → duquel (rare at B1: use dont).
+- **à + lequel → auquel, auxquels, auxquelles**; de + lequel → duquel, desquels, desquelles. For plain de, use
+  dont. After a preposition ending in de (à côté de, près de, en face de, au milieu de), dont is impossible:
+  le parc à côté duquel j'habite, la gare près de laquelle je travaille.
 - **ce qui, ce que, ce dont** = « the thing that / what », with no noun before: Ce qui me plaît, c'est le calme.
   Je ne comprends pas ce que tu dis. C'est ce dont j'ai besoin.
 - French never drops the relative pronoun: the man I saw → l'homme *que* j'ai vu.
@@ -27,6 +29,7 @@ The choice depends on the job the pronoun does in the relative clause, not on wh
 - « le jour quand », « le moment que » → le jour où, le moment où.
 - Missing pronoun: « le livre j'ai acheté » → le livre que j'ai acheté.
 - de kept with que: « la chose que j'ai besoin » → dont j'ai besoin; « le film que je t'ai parlé » → dont je t'ai parlé.
+- dont after a compound preposition: « le parc dont j'habite à côté » → le parc à côté duquel j'habite.
 - « ce que » as subject: « ce que est important » → ce qui est important.
 - Dutch « wat » after « alles »: « tout que » → tout ce que, tout ce qui.
 

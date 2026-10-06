@@ -31,7 +31,9 @@ depuis (still going on), pendant (duration), il y a (ago), dans (from now), en (
 
 - « besoin à » → besoin de. « demander mon employeur pour » (ask … for / vragen om) → demander à mon employeur de + infinitive, or demander qqch à qqn.
 - « attendre pour », « chercher pour », « écouter à », « payer pour le billet » (wait for, look for, listen to) → attendre, chercher, écouter, payer le billet.
-- « dépendre sur », « penser de/sur » for « think about » → dépendre de, penser à.
+- « dépendre sur » → dépendre de. « penser sur » does not exist.
+- **penser à** = have in mind (Je pense à mes vacances); **penser de** = have an opinion, mostly in questions
+  (Qu'est-ce que tu penses de ce film ?). « Je pense de mes vacances » → Je pense à mes vacances.
 - « téléphoner quelqu'un », « répondre la question » → téléphoner à, répondre à.
 - « je suis intéressé dans » → je m'intéresse à / je suis intéressé par.
 - « essayer à », « décider à » → essayer de, décider de. « commencer de » is rare → commencer à.

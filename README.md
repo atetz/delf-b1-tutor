@@ -1,13 +1,13 @@
 # DELF B1 tutor
 
-A set of Claude Code skills for preparing the DELF B1 (tout public) French exam with Claude:
+A set of agent skills for preparing the DELF B1 (tout public) French exam with an AI assistant:
 a placement test, one-hour daily sessions, practice for the four papers, and spaced review of your own mistakes.
 
 The design is in [`docs/architecture.md`](docs/architecture.md).
 
 ## Use
 
-Open the repo in Claude Code and type:
+Open the repo in your coding assistant and type:
 
 | Command | What it does |
 |---|---|
@@ -17,6 +17,21 @@ Open the repo in Claude Code and type:
 | `/delf-review` | Spaced review of your own weak points and vocabulary. |
 | `/fle-grammar [topic]`, `/fle-vocabulary [topic]` | A short lesson and fresh drills on one point or theme. |
 | `/delf-mock` | A full timed mock exam. |
+
+Built and tested in Claude Code. The skills use the open Agent Skills format, and `AGENTS.md` holds the project
+rules, so other assistants can run them too:
+
+| Assistant | Finds the skills in | Start a skill with |
+|---|---|---|
+| Claude Code | `.claude/skills/` | `/delf-session` |
+| Cursor | `.claude/skills/` or `.agents/skills/` | `/delf-session` |
+| VS Code with Copilot | `.claude/skills/` or `.agents/skills/` | `/delf-session` |
+| Codex | `.agents/skills/` | `$delf-session` |
+| Anything else that reads `AGENTS.md` | by path, as `AGENTS.md` explains | "run the delf-session skill" |
+
+`.agents/skills` is a symlink to `.claude/skills`. On Windows, clone with `git config core.symlinks true`
+or copy the folder. Outside Claude Code, the argument placeholders and the pre-loaded daily state are not
+filled in by the tool; `AGENTS.md` tells the assistant what to do instead.
 
 ## Setup
 

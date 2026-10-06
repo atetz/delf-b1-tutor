@@ -18,7 +18,9 @@ Status: design only, nothing built yet. Revised 2026-09-26 after checking agains
 
 ```
 delf-b1-tutor/
-├── CLAUDE.md                     # 20 lines: what the repo is, session shape, where state lives, the content rule
+├── AGENTS.md                     # what the repo is, session shape, where state lives, the content rule, how to run skills
+├── CLAUDE.md                     # one line: imports AGENTS.md
+├── .agents/skills -> ../.claude/skills
 ├── reference/                    # shared, public-safe, loaded on demand
 │   ├── exam-format.md            # 4 épreuves, timings, /25 each, pass = 50/100 and ≥5 per skill
 │   ├── b1-descriptors.md         # what B1 means per skill, in plain words
@@ -245,7 +247,7 @@ What the book gave us, and how each piece becomes original repo content:
 | Grammar and vocabulary pages | `grammar-checklist.md` and `themes.md` as our own lists |
 | Page map (plan.md §7) | Dropped |
 
-Guard rails: `CLAUDE.md` states the rule ("never name, quote, cite or reproduce commercial prep material"),
+Guard rails: `AGENTS.md` (imported by `CLAUDE.md`) states the rule ("never name, quote, cite or reproduce commercial prep material"),
 `.gitignore` excludes PDFs and audio, and `scripts/check-no-source.sh` runs as a pre-commit hook grepping for the title,
 publisher and page-reference patterns. The PDF can still sit on your machine outside the repo for your own reading.
 
@@ -282,11 +284,24 @@ and just returns a result. `allowed-tools` pre-approves only `Bash(python3 scrip
 | `disable-model-invocation: true` for things with side effects you control | Added for placement and mock (§7) |
 | `$ARGUMENTS` / named `arguments`, `argument-hint` | Added (§7) |
 | `!`command`` injects live context at load; a failing command aborts the whole skill | Router injects state via a script with `|| true` |
-| `${CLAUDE_SKILL_DIR}` for a skill's own files, `${CLAUDE_PROJECT_DIR}` for repo files | Skill-only material stays in the skill folder; the shared `reference/` and `learner/` are addressed via `${CLAUDE_PROJECT_DIR}` |
+| `${CLAUDE_SKILL_DIR}` for a skill's own files, `${CLAUDE_PROJECT_DIR}` for repo files | Changed for portability (§8a): skill files are written `references/…`, repo files from the repository root. Only the router's injected command keeps `${CLAUDE_PROJECT_DIR}` |
 | `context: fork` runs without conversation history | Not used: sessions are interactive (§7) |
 | `allowed-tools` isn't gated by workspace trust, review in shared repos | Kept to one narrow script rule |
 | Skills can be packaged as a plugin; `${CLAUDE_PLUGIN_DATA}` survives updates | Later option for sharing: plugin for the skills, learner state in plugin data. The plain repo stays simpler for now |
 | Shell injection is disabled in Cowork for skills synced from claude.ai | If you ever sync these to claude.ai, the router must also work by reading files when injection is off |
+
+## 8a. Other assistants
+
+The skills stay in `.claude/skills/` and keep the Claude Code extras, but nothing depends on them:
+
+| Claude Code feature | What other assistants get |
+|---|---|
+| `CLAUDE.md` | `AGENTS.md` holds the rules; `CLAUDE.md` only imports it |
+| `.claude/skills/` discovery | `.agents/skills` symlinks to it (Codex, Cursor, Copilot scan that path) |
+| `${CLAUDE_SKILL_DIR}`, `${CLAUDE_PROJECT_DIR}` | plain relative paths, with the convention stated at the top of each skill |
+| `$ARGUMENTS`, named `arguments` | each skill says what an unfilled placeholder means |
+| `!`command`` injection in the router | the router tells the assistant to run `python3 scripts/today.py` itself |
+| `disable-model-invocation`, `allowed-tools`, `argument-hint` | ignored where unknown; `AGENTS.md` restates the "only the learner starts placement and mock" rule |
 
 ## 9. Build order
 

@@ -7,14 +7,16 @@ arguments: [theme]
 
 # Compréhension de l'oral (CO)
 
-Theme requested: `$theme` (empty = choose one; in radio mode the theme is whatever the bulletin covers).
+Paths: `references/…` is this skill's own folder; every other path starts at the repository root.
 
-Claude cannot hear audio. The learner listens; Claude works from the transcript afterwards (radio mode) or from
+Theme requested: `$theme` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message; empty = choose one; in radio mode the theme is whatever the bulletin covers).
+
+The assistant cannot hear audio. The learner listens; the assistant works from the transcript afterwards (radio mode) or from
 a script it wrote (exam mode).
 
 ## 1. Inputs
 
-- **Mode:** read `${CLAUDE_SKILL_DIR}/references/sources.md` and choose. Default: `radio`. Use `exam` when the router asks for
+- **Mode:** read `references/sources.md` and choose. Default: `radio`. Use `exam` when the router asks for
   exam timing, in phase 3, or when the learner wants the three-document format, and text-to-speech works.
 - **Weak points:** rows of `learner/weak-points.md` whose Seen in contains CO (`comprehension/co-details`,
   `comprehension/co-global`, `lexique/faux-amis`).
@@ -22,7 +24,7 @@ a script it wrote (exam mode).
 ## 2. Generate the task
 
 - **Radio:** nothing to generate yet. Give the learner the source and the listening instructions from `sources.md`.
-- **Exam:** write three short scripts and their questions following `${CLAUDE_SKILL_DIR}/references/question-types.md`.
+- **Exam:** write three short scripts and their questions following `references/question-types.md`.
   Warn the learner to look away before the scripts appear on screen.
 
 ## 3. Run it
@@ -44,7 +46,7 @@ No hints and no vocabulary help until every answer is in.
 
 ## 4. Correct and score
 
-1. Mark with `${CLAUDE_SKILL_DIR}/references/scoring.md`. For each wrong answer, quote the exact words of the transcript that
+1. Mark with `references/scoring.md`. For each wrong answer, quote the exact words of the transcript that
    decide it, and name the trap (number, negation, who did what, a distractor that was mentioned then rejected).
 2. Radio mode: compare the summary with the transcript: items caught, items missed, anything misunderstood.
    The summary's French is corrected lightly (three corrections at most); this is a listening session.
@@ -53,6 +55,6 @@ No hints and no vocabulary help until every answer is in.
 
 ## 5. Record
 
-Follow `${CLAUDE_PROJECT_DIR}/reference/recording.md`: log row with the source and date of the bulletin, CO score, weak points
+Follow `reference/recording.md`: log row with the source and date of the bulletin, CO score, weak points
 with a `comprehension/` or `lexique/` id, new words in `learner/vocabulary.md`. Do not store the transcript in
 the session note: keep the link or date, the questions missed and the deciding quotes only.

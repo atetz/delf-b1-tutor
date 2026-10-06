@@ -7,14 +7,16 @@ disable-model-invocation: true
 
 # Mock exam
 
-Mode: `$ARGUMENTS` (`resume` continues an unfinished mock from `learner/sessions/*-mock.md`).
+Paths: every path starts at the repository root.
+
+Mode: `$ARGUMENTS` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message; `resume` continues an unfinished mock from `learner/sessions/*-mock.md`).
 
 This skill holds no task material of its own. It borrows each paper's generators and criteria.
 
 ## 1. Inputs
 
-1. Read `${CLAUDE_PROJECT_DIR}/reference/exam-format.md` for order, timings and the pass rule.
-2. Pick four different themes from `${CLAUDE_PROJECT_DIR}/reference/themes.md`, none used in the last three sessions. A mock does
+1. Read `reference/exam-format.md` for order, timings and the pass rule.
+2. Pick four different themes from `reference/themes.md`, none used in the last three sessions. A mock does
    **not** target the learner's weak points: it measures.
 3. Create `learner/sessions/YYYY-MM-DD-mock.md` with the four papers marked `pending`.
 4. Tell the learner the conditions: timer on their side, no dictionary, no questions about the content, phone away.
@@ -26,10 +28,10 @@ Generate each paper just before it runs, reading only that paper's task file:
 
 | Order | Paper | Time | Generator |
 |---|---|---|---|
-| 1 | CO | about 25 min | `${CLAUDE_PROJECT_DIR}/.claude/skills/delf-listening/references/question-types.md`, exam mode in `sources.md` (three documents by text-to-speech). No text-to-speech: radio mode, and say the CO score is less comparable. |
-| 2 | CE | 45 min | `${CLAUDE_PROJECT_DIR}/.claude/skills/delf-reading/references/task-types.md`: all three exercises |
-| 3 | PE | 45 min | `${CLAUDE_PROJECT_DIR}/.claude/skills/delf-writing/references/genres.md`: one instruction |
-| 4 | PO | 10 min preparation + about 15 min | the three files in `${CLAUDE_PROJECT_DIR}/.claude/skills/delf-speaking/references/` (entretien, interaction, point-de-vue) |
+| 1 | CO | about 25 min | `.claude/skills/delf-listening/references/question-types.md`, exam mode in `sources.md` (three documents by text-to-speech). No text-to-speech: radio mode, and say the CO score is less comparable. |
+| 2 | CE | 45 min | `.claude/skills/delf-reading/references/task-types.md`: all three exercises |
+| 3 | PE | 45 min | `.claude/skills/delf-writing/references/genres.md`: one instruction |
+| 4 | PO | 10 min preparation + about 15 min | the three files in `.claude/skills/delf-speaking/references/` (entretien, interaction, point-de-vue) |
 
 ## 3. Run it
 
@@ -54,6 +56,6 @@ Present:
 
 ## 5. Record
 
-Follow `${CLAUDE_PROJECT_DIR}/reference/recording.md`: one log row (focus `mock`, score = total /100), all four Latest scores and
+Follow `reference/recording.md`: one log row (focus `mock`, score = total /100), all four Latest scores and
 Trends, per-criterion rows for PE and PO, weak points (five new rows at most across the whole mock), and the
 corrections appended to the mock file.

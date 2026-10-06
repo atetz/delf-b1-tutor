@@ -7,11 +7,13 @@ arguments: [topic]
 
 # Vocabulary: one theme or one word problem
 
-Topic requested: `$topic` (empty: ask, or take the `lexique/` weak point with the oldest due date, or today's session theme).
+Paths: `references/…` is this skill's own folder; every other path starts at the repository root.
+
+Topic requested: `$topic` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message; empty: ask, or take the `lexique/` weak point with the oldest due date, or today's session theme).
 
 ## Topic files
 
-Each file in `${CLAUDE_SKILL_DIR}/references/` has four parts: core content, typical errors, examples, drill recipe. Read only the one needed.
+Each file in `references/` has four parts: core content, typical errors, examples, drill recipe. Read only the one needed.
 
 | Topic | File | Id |
 |---|---|---|
@@ -24,7 +26,7 @@ Each file in `${CLAUDE_SKILL_DIR}/references/` has four parts: core content, typ
 | Theme: housing | `logement.md` | |
 | Theme: environment | `environnement.md` | |
 
-Other themes are listed in `${CLAUDE_PROJECT_DIR}/reference/themes.md`. No file for the theme: build the lesson on the spot with
+Other themes are listed in `reference/themes.md`. No file for the theme: build the lesson on the spot with
 the same four parts (20 to 25 words and expressions, sorted nouns with article / verbs with their preposition /
 adjectives / ready-made phrases for giving an opinion on the theme), then offer to save it as a new file.
 
@@ -46,7 +48,7 @@ adjectives / ready-made phrases for giving an opinion on the theme), then offer 
    - A recurring problem (same false friend again, spelling pattern) gets or resets a row in
      `learner/weak-points.md` with its `lexique/` id.
    - Log row in `learner/log.md` (focus `vocabulary`, task = topic), unless called inside another skill's session.
-   Formats: `${CLAUDE_PROJECT_DIR}/reference/recording.md` and `${CLAUDE_PROJECT_DIR}/reference/spaced-review.md`.
+   Formats: `reference/recording.md` and `reference/spaced-review.md`.
 
 Unsure of a gender or a spelling: look that one word up (Le Robert or Larousse online) instead of guessing.
 For expressions in context, the learner can search Reverso Context themself; nothing from those sites is stored here.

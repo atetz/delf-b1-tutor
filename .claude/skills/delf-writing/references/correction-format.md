@@ -16,7 +16,7 @@ Installed means `tools/languagetool/lib/` and `tools/languagetool/target/classes
 
 3. Output is one line per issue: «text» -> [suggestions] | rule id | message.
 
-Not installed or the run fails: say so in one line, continue without it, and take extra care with what Claude alone
+Not installed or the run fails: say so in one line, continue without it, and take extra care with what the assistant alone
 tends to miss: accents (including on capitals: À, É), hyphens, and plural marks.
 
 ## 2. Review every hit

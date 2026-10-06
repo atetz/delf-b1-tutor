@@ -9,7 +9,8 @@
 - No élision for **qui, tu, ça, ma/ta/sa** (ma amie → mon amie), nor before a number word (le onze, le huit)
   or an aspirated h (le hasard, la haine, le héros).
 - **à + le → au, à + les → aux, de + le → du, de + les → des.** No contraction with la or l': à la gare, de l'hôtel.
-- **de + les** contracts, but **de + des** becomes plain de after a negation or a quantity: beaucoup de gens.
+- Not to be confused with the contraction: **du, de la, des** (some) shrink to plain **de / d'** after a negation
+  or a quantity: pas de temps, beaucoup de gens, un peu d'eau.
 
 ## Typical errors (Dutch and English speakers)
 

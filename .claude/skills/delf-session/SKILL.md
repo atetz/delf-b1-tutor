@@ -7,16 +7,19 @@ allowed-tools: Bash(python3 scripts/*) Bash(python3 ${CLAUDE_PROJECT_DIR}/script
 
 # Daily session router
 
+Paths: every path starts at the repository root.
+
 This skill only decides and hands over. It holds no exercises, criteria or tips: those live in the specialist skills.
 
 ## Today's state
 
 !`python3 ${CLAUDE_PROJECT_DIR}/scripts/today.py || true`
 
-If the block above is empty or shows the command itself, read instead: `learner/profile.md`, `learner/scores.md`,
+If the block above is empty or shows the command itself, run `python3 scripts/today.py` yourself. If that
+fails too, read instead: `learner/profile.md`, `learner/scores.md`,
 the rows of `learner/weak-points.md` whose Next review is today or earlier, and the last 5 rows of `learner/log.md`.
 
-Focus requested by the learner: `$ARGUMENTS` (empty = choose).
+Focus requested by the learner: `$ARGUMENTS` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message; empty = choose).
 
 ## Procedure
 

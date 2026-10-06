@@ -15,9 +15,15 @@ Three tenses share the work when telling something in the past:
   In the passé composé they mark a sudden change: j'ai eu peur (I got scared), j'ai su (I found out).
 - A stated, closed duration takes the passé composé even when long: j'ai habité dix ans à Lyon.
 - **Forms.** Passé composé: avoir or être in the present + participle. Être for reflexive verbs and the movement
-  or change verbs (aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester,
-  tomber, retourner, passer, devenir). Imparfait: nous-stem of the present + -ais, -ais, -ait, -ions, -iez, -aient.
-  Plus-que-parfait: avoir or être in the imparfait + participle.
+  or change verbs (aller, venir, revenir, devenir, arriver, partir, entrer, rentrer, sortir, monter, descendre,
+  naître, mourir, rester, tomber, retourner, passer). Imparfait: nous-stem of the present + -ais, -ais, -ait,
+  -ions, -iez, -aient; only être is irregular (j'étais). Plus-que-parfait: avoir or être in the imparfait + participle.
+- **Avoir when there is a direct object:** sortir, rentrer, monter, descendre, retourner and passer take avoir as
+  soon as they have one. Je suis sorti → J'ai sorti la poubelle. Elle est montée → Elle a monté les valises.
+  Passer is the one met most: je suis passé chez toi, but j'ai passé un examen, j'ai passé une semaine à Nice.
+- **Irregular participles to know by heart:** avoir → eu, être → été, faire → fait, prendre → pris, mettre → mis,
+  dire → dit, écrire → écrit, voir → vu, pouvoir → pu, devoir → dû, vouloir → voulu, savoir → su, lire → lu,
+  boire → bu, recevoir → reçu, venir → venu, ouvrir → ouvert, offrir → offert.
 
 ## Typical errors (Dutch and English speakers)
 
@@ -27,6 +33,8 @@ Three tenses share the work when telling something in the past:
   « j'ai été fatigué tous les soirs » → j'étais fatigué.
 - Imparfait for a single finished event: « hier j'allais au cinéma » → je suis allé.
 - Wrong auxiliary: « j'ai allé », « je suis mangé », « j'ai resté » → je suis allé, j'ai mangé, je suis resté.
+- Être kept although there is a direct object: « je suis passé un examen », « je suis sorti le chien » →
+  j'ai passé un examen, j'ai sorti le chien.
 - Dutch perfect vs past does not map: « ik heb gewerkt / ik werkte » are chosen on other grounds than in French.
 
 ## Examples

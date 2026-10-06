@@ -6,11 +6,14 @@
   Before an infinitive, both together: Je préfère ne pas sortir.
 - Other second parts replace pas (never add pas to them): **ne … plus** (no longer), **ne … jamais** (never),
   **ne … rien** (nothing), **ne … personne** (nobody), **ne … que** (only), **ne … aucun(e)** (not any),
-  **ne … ni … ni** (neither … nor).
+  **ne … ni … ni** (neither … nor). **ne … pas encore** (not yet) keeps pas.
+- Each answers a positive word: déjà → pas encore, encore / toujours → plus, toujours / souvent → jamais,
+  quelque chose → rien, quelqu'un → personne.
 - **personne** and **aucun** go after the participle: je n'ai vu personne. As subjects: Personne n'est venu. Rien n'a changé.
 - **Un, une, du, de la, des → de (d')** after a negation: J'ai un vélo → Je n'ai pas de vélo. Il y a des
   exceptions → Il n'y a pas d'exceptions.
   No change with **être** (Ce n'est pas un problème) and no change for le, la, les (Je n'aime pas le café).
+  No change with **ne … que** either, because it restricts and does not deny: Je ne bois que du thé.
 - Object pronouns stay between ne and the verb: Je ne le connais pas.
 - In casual speech « ne » is often dropped (j'sais pas). Write it always; say it in the exam's formal situations.
 - Answering a negative question with yes: **si**. « Tu ne viens pas ? — Si, j'arrive. »
@@ -24,6 +27,8 @@
 - Position in compound tenses: « je n'ai compris pas » → je n'ai pas compris.
 - Dutch « geen » translated as « pas un »: « ik heb geen auto » → je n'ai pas de voiture.
 - « aussi » in a negative sentence → **non plus**: Moi non plus.
+- « pas déjà », « je n'ai encore pas fini » for « not yet » → je n'ai pas encore fini.
+- de after ne … que: « je ne bois que de thé » → je ne bois que du thé.
 
 ## Examples
 
@@ -36,7 +41,7 @@
 ## Drill recipe
 
 - **Transformation:** affirmative sentences with un/une/du/des to make negative; include one with être and one
-  with le/la/les where the article must stay.
+  with le/la/les where the article must stay, and one with ne … que.
 - **Translation NL/EN → FR:** short sentences with geen / not any, nothing, nobody, never, no longer, only.
 - **Error correction:** double negation, missing ne, wrong position in the passé composé.
 - **Answer the question negatively** using the element given: (jamais) « Tu fumes ? »

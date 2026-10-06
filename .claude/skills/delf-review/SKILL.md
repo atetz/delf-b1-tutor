@@ -7,19 +7,21 @@ allowed-tools: Bash(python3 scripts/*) Bash(python3 ${CLAUDE_PROJECT_DIR}/script
 
 # Spaced review
 
-Mode: `$ARGUMENTS` (empty: `warmup` when called inside a session, `full` when it is the day's main task).
+Paths: `references/…` is this skill's own folder; every other path starts at the repository root.
+
+Mode: `$ARGUMENTS` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message; empty: `warmup` when called inside a session, `full` when it is the day's main task).
 
 ## 1. Inputs
 
 The due rows of `learner/weak-points.md` and `learner/vocabulary.md` (Next review today or earlier, not retired).
 If the router did not already list them, run `python3 scripts/today.py`.
-Rules for intervals: `${CLAUDE_PROJECT_DIR}/reference/spaced-review.md`.
+Rules for intervals: `reference/spaced-review.md`.
 
 ## 2. Build the review
 
 - Group the due rows by **Fix with**. Open only the topic files for those ids (paths in
-  `${CLAUDE_PROJECT_DIR}/reference/topics.md`) and use their drill recipe. No file yet: use
-  `${CLAUDE_SKILL_DIR}/references/drill-types.md`.
+  `reference/topics.md`) and use their drill recipe. No file yet: use
+  `references/drill-types.md`.
 - **Warm-up (10 min):** at most 5 weak points and 5 words, 2 items each. Oldest due date first.
 - **Full (35 min):** all due items, 3 to 4 items each, then one new point: the next unchecked line of
   `reference/grammar-checklist.md` that matches the criterion rated lowest in `learner/scores.md`.
@@ -51,5 +53,5 @@ Update each reviewed row in `learner/weak-points.md` and `learner/vocabulary.md`
 | wrong | 1 | tomorrow | reviewing |
 
 Then end with one line: how many right, how many back to day 1. In full mode, also add the log row and session
-note described in `${CLAUDE_PROJECT_DIR}/reference/recording.md`. In warm-up mode the main task's skill writes the log row; add a
+note described in `reference/recording.md`. In warm-up mode the main task's skill writes the log row; add a
 "Warm-up" line to today's session note only.

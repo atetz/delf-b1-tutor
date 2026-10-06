@@ -7,7 +7,9 @@ disable-model-invocation: true
 
 # Placement and checkpoint
 
-Mode: `$ARGUMENTS`
+Paths: `references/…` is this skill's own folder; every other path starts at the repository root.
+
+Mode: `$ARGUMENTS` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message)
 - empty: first placement. Fills the **Start** column and the first weak points.
 - `resume`: continue an unfinished placement or checkpoint.
 - `checkpoint`: monthly re-test with new material. Updates **Latest** and Trend, never Start.
@@ -27,8 +29,8 @@ Mode: `$ARGUMENTS`
 
 ## 2. Generate the tasks
 
-Read `${CLAUDE_SKILL_DIR}/references/tasks.md`.
-- First placement: use the ready-made set in `${CLAUDE_SKILL_DIR}/references/sample-set.md`.
+Read `references/tasks.md`.
+- First placement: use the ready-made set in `references/sample-set.md`.
 - Checkpoint, or the learner has already seen the sample set: generate new material with the same structure,
   on a theme not used in the last three sessions.
 
@@ -47,7 +49,7 @@ Read `${CLAUDE_SKILL_DIR}/references/tasks.md`.
 
 ## 4. Correct and score
 
-When all four parts are done, read `${CLAUDE_SKILL_DIR}/references/scoring.md` and follow it: mark CE and CO, rate PE and PO per
+When all four parts are done, read `references/scoring.md` and follow it: mark CE and CO, rate PE and PO per
 criterion, estimate each paper out of 25, then derive the weak points, the phase, the weekly emphasis and the exam window.
 
 Present, in this order: the four scores and total with the pass rule, the two strongest things, the weak points
@@ -56,7 +58,7 @@ five groups that cost most; the rest is listed by name.
 
 ## 5. Record
 
-Follow `${CLAUDE_PROJECT_DIR}/reference/recording.md`, with these differences:
+Follow `reference/recording.md`, with these differences:
 - `scores.md`: first placement writes **Start** and **Latest** (same value) and sets **Target** with the learner
   (default 15 per paper). Checkpoint writes Latest and Trend only.
 - `weak-points.md`: up to ten rows on a first placement, spread over the next days: the five costliest get
