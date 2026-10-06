@@ -3,7 +3,20 @@
 A set of Claude Code skills for preparing the DELF B1 (tout public) French exam with Claude:
 a placement test, one-hour daily sessions, practice for the four papers, and spaced review of your own mistakes.
 
-Status: skeleton. The design is in [`docs/architecture.md`](docs/architecture.md); skills are added one by one.
+The design is in [`docs/architecture.md`](docs/architecture.md).
+
+## Use
+
+Open the repo in Claude Code and type:
+
+| Command | What it does |
+|---|---|
+| `/delf-placement` | First: a two-hour diagnostic of the four papers (can be spread over several sittings). Later: `/delf-placement checkpoint` once a month. |
+| `/delf-session` | The daily hour: warm-up review, one exam task, correction, logging. One conversation per day. |
+| `/delf-listening`, `/delf-reading`, `/delf-writing`, `/delf-speaking` `[theme]` | One paper directly. |
+| `/delf-review` | Spaced review of your own weak points and vocabulary. |
+| `/fle-grammar [topic]`, `/fle-vocabulary [topic]` | A short lesson and fresh drills on one point or theme. |
+| `/delf-mock` | A full timed mock exam. |
 
 ## Setup
 
