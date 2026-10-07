@@ -52,6 +52,8 @@ delf-b1-tutor/
 │   ├── delf-review/              # grammar + weak-point spaced review (Friday, and the 10-min warm-up)
 │   │   ├── SKILL.md
 │   │   └── references/drill-types.md
+│   ├── delf-flashcards/          # Anki CSV from one session's errors and new words
+│   │   └── SKILL.md
 │   ├── delf-mock/                # full timed exam, Phase 3; calls the four skills' task generators in exam order
 │   │   └── SKILL.md
 │   ├── fle-grammar/              # rules + fresh drills, one file per grammar point
@@ -66,7 +68,8 @@ delf-b1-tutor/
 │   ├── weak-points.md            # the spaced-review table
 │   ├── vocabulary.md             # words and expressions to learn, same spaced review
 │   ├── log.md                    # one line per session
-│   └── sessions/YYYY-MM-DD.md    # detailed notes per session
+│   ├── sessions/YYYY-MM-DD.md    # detailed notes per session
+│   └── flashcards/YYYY-MM-DD.csv # Anki import files made by delf-flashcards
 ├── scripts/
 │   ├── today.py                  # prints date, weekday, due weak points, latest scores for the router
 │   └── check-no-source.sh        # pre-commit grep for the book's title, publisher, "p. 12"-style refs, *.pdf
@@ -87,6 +90,7 @@ latest scores and the last few log lines. Splitting keeps each read small.
 | `delf-writing` | PE / writing | `genres.md`, `criteria.md`, grammar weak points | same pattern |
 | `delf-speaking` | PO / speaking / oral | `profile.md` (for the entretien), scenario files | same pattern |
 | `delf-review` | warm-up, grammar, Friday | `weak-points.md`, `grammar-checklist.md` | interval and next date per weak point |
+| `delf-flashcards` | "flashcards", "Anki", "cartes" | the session note, `weak-points.md`, `vocabulary.md`, earlier files in `flashcards/` | `flashcards/YYYY-MM-DD.csv` only |
 | `delf-mock` | mock, examen blanc | `exam-format.md`, each specialist's task references | all four scores, one session note |
 | `fle-grammar` | a grammar point by name, "explain", "drill", or an error found during correction | the one topic file needed | weak-point rows (grammar), log line |
 | `fle-vocabulary` | a theme, "vocabulaire", false friends | the one theme file needed | `vocabulary.md`, log line |
@@ -267,6 +271,7 @@ The skills and `reference/` are shareable. `learner/` holds your scores, errors 
 | `delf-mock` | `disable-model-invocation: true` (90+ minutes, you choose when) |
 | `delf-listening`, `-reading`, `-writing`, `-speaking` | `argument-hint: [theme]`, `arguments: [theme]` so `/delf-writing logement` works directly |
 | `delf-review` | default; Claude may call it for the warm-up or when a known weak point comes up |
+| `delf-flashcards` | default, `argument-hint: [date] [only … \| without …]` |
 | `fle-grammar`, `fle-vocabulary` | default (you or Claude), `argument-hint: [topic]`, `arguments: [topic]` |
 
 No skill uses `context: fork`: every session waits for your answers, and a forked skill runs without the conversation

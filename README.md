@@ -15,6 +15,7 @@ Open the repo in your coding assistant and type:
 | `/delf-session` | The daily hour: warm-up review, one exam task, correction, logging. One conversation per day. |
 | `/delf-listening`, `/delf-reading`, `/delf-writing`, `/delf-speaking` `[theme]` | One paper directly. |
 | `/delf-review` | Spaced review of your own weak points and vocabulary. |
+| `/delf-flashcards [date]` | Anki cards (CSV) from a session's errors and new words. |
 | `/fle-grammar [topic]`, `/fle-vocabulary [topic]` | A short lesson and fresh drills on one point or theme. |
 | `/delf-mock` | A full timed mock exam. |
 
