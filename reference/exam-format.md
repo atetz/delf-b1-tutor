@@ -9,7 +9,7 @@ figures against the page (or your exam centre's convocation) before relying on a
 |---|---|---|---|
 | Compréhension de l'oral (CO) | Answer questionnaires on three short recordings, each played twice. About 6 minutes of audio in total. | about 25 min | /25 |
 | Compréhension des écrits (CE) | Answer questionnaires on written documents: pick out the information that fits a given need, then understand general-interest texts. | 45 min | /25 |
-| Production écrite (PE) | Write one text giving a personal position on a general topic (message, letter, forum post, article). In the exam two subjects are offered and you choose one. At least 160 words. | 45 min | /25 |
+| Production écrite (PE) | Write one text giving a personal position on a general topic (message, letter, forum post, article). At least 160 words. | 45 min | /25 |
 | Production orale (PO) | Three parts in a row with one examiner pair: guided interview, interaction, point of view from a short prompt. | about 15 min, plus 10 min preparation for part 3 | /25 |
 
 The three written papers are sat together (1 h 55). The speaking paper is individual, on the same or another day.
