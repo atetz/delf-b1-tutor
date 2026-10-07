@@ -36,7 +36,7 @@
 - Prends ton temps et appelle-moi quand tu seras prêt.
 - N'oubliez pas votre pièce d'identité et soyez à l'accueil à neuf heures.
 - Ce dossier est urgent : envoyez-le-moi avant midi, s'il vous plaît.
-- Ne t'inquiète pas, vas-y sans moi, je vous rejoins plus tard.
+- Ne t'inquiète pas, vas-y sans moi, je te rejoins plus tard.
 - N'hésitez pas à me contacter si vous avez besoin de renseignements.
 
 ## Drill recipe

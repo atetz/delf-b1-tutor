@@ -42,5 +42,7 @@ Focus requested by the learner: `$ARGUMENTS` (an unfilled placeholder starting w
    Friday: the main task is `delf-review` in full-session mode, which calls `fle-grammar` or `fle-vocabulary`.
 7. **Check the bookkeeping:** today's row exists in `learner/log.md` and the score is in `learner/scores.md`.
    If the specialist skipped it, do it now following `reference/recording.md`.
+8. **Offer flashcards:** once the bookkeeping is done, ask in one line whether the learner wants Anki cards from
+   today's errors and new words. Yes: invoke `delf-flashcards` for today. No answer or no: end the session.
 
 One session = one conversation. Tomorrow, start a fresh conversation so today's skill material is not carried along.

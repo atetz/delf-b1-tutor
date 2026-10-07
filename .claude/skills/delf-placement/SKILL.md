@@ -10,6 +10,7 @@ disable-model-invocation: true
 Paths: `references/…` is this skill's own folder; every other path starts at the repository root.
 
 Mode: `$ARGUMENTS` (an unfilled placeholder starting with a dollar sign means: take it from the learner's message)
+
 - empty: first placement. Fills the **Start** column and the first weak points.
 - `resume`: continue an unfinished placement or checkpoint.
 - `checkpoint`: monthly re-test with new material. Updates **Latest** and Trend, never Start.
@@ -30,18 +31,19 @@ Mode: `$ARGUMENTS` (an unfilled placeholder starting with a dollar sign means: t
 ## 2. Generate the tasks
 
 Read `references/tasks.md`.
+
 - First placement: use the ready-made set in `references/sample-set.md`.
 - Checkpoint, or the learner has already seen the sample set: generate new material with the same structure,
   on a theme not used in the last three sessions.
 
 ## 3. Run it, one part per turn, in this order
 
-| Part | Time | What |
-|---|---|---|
-| CE | 20 min | one article, ten questions |
-| PE | 45 min | one text, 160 words minimum |
-| PO | 15 min | entretien, interaction, point of view (10 min preparation before the third) |
-| CO | 15 min | two recordings heard twice, or the radio method |
+| Part | Time   | What                                                                        |
+| ---- | ------ | --------------------------------------------------------------------------- |
+| CE   | 20 min | one article, ten questions                                                  |
+| PE   | 45 min | one text, 160 words minimum                                                 |
+| PO   | 15 min | entretien, interaction, point of view (10 min preparation before the third) |
+| CO   | 15 min | two recordings heard twice, or the radio method                             |
 
 - No hints, no corrections, no scores between parts: correction comes at the end, so one part does not colour the next.
 - After each part, save the learner's raw answers under that part's heading in the placement file and mark it
@@ -59,6 +61,7 @@ five groups that cost most; the rest is listed by name.
 ## 5. Record
 
 Follow `reference/recording.md`, with these differences:
+
 - `scores.md`: first placement writes **Start** and **Latest** (same value) and sets **Target** with the learner
   (default 15 per paper). Checkpoint writes Latest and Trend only.
 - `weak-points.md`: up to ten rows on a first placement, spread over the next days: the five costliest get

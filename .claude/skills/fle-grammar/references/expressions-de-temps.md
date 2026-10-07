@@ -56,7 +56,7 @@
 ## Examples
 
 - Je travaille dans cette entreprise depuis 2019, mais j'ai commencé ma carrière il y a quinze ans.
-- Nous partons dans deux semaines pour un mois ; nous serons absents jusqu'à la fin août.
+- Nous partons dans deux semaines pour un mois ; nous serons absents jusqu'à la fin du mois d'août.
 - Après avoir visité l'appartement, nous avons signé le contrat en une heure.
 - Ça fait longtemps que je ne t'ai pas vu : on se voit avant de partir en vacances ?
 - Elle est arrivée un lundi et, le lendemain, elle a trouvé un logement.

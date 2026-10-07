@@ -107,6 +107,7 @@ Kept deliberately small. Today's date, weekday and due weak points are injected 
 4. Invoke exactly one specialist skill for the 35-minute task with a one-line brief (skill, theme, difficulty, weak points to target).
    One session = one conversation: start a fresh one the next day, because invoked skills stay in context.
 5. Make sure the specialist wrote its log line and score. That is the only bookkeeping the orchestrator checks.
+6. Ask whether the learner wants Anki cards from the session; if yes, invoke `delf-flashcards`.
 
 It never contains exercises, criteria or tips; those belong to the specialists.
 

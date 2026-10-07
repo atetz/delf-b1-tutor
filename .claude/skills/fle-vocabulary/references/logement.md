@@ -15,7 +15,7 @@ un lave-linge, un lave-vaisselle, un four, un frigo, une fuite d'eau, une panne.
 **Renting and buying**
 louer, un locataire, un propriétaire, une agence immobilière, une annonce, visiter un appartement, un loyer,
 les charges (f.) (comprises), une caution / un dépôt de garantie, un bail (lease), signer le bail, un dossier,
-un garant, l'état des lieux (m.) (inventory check), le préavis (notice), déménager (move out or house),
+un garant, l'état des lieux (m.) (inventory check), le préavis (notice), déménager (move house),
 emménager (move in), s'installer, acheter, un crédit, les travaux (m.), rénover.
 
 **Neighbourhood**
@@ -30,7 +30,7 @@ L'idéal serait de… / J'ai du mal à supporter le bruit. / Ça ne me dérange 
 ## Typical errors
 
 - « une chambre » for any room → une pièce. An appartement « de trois chambres » has three bedrooms.
-- « louer » works both ways (to rent and to let); make it clear: je loue un appartement à un propriétaire.
+- « louer » works both ways (to rent and to let); make it clear: « je loue un appartement » (je suis locataire), « je loue mon appartement à un locataire » (je suis propriétaire).
 - « bouger » or « mouvoir » for moving house → déménager.
 - « le rent », « la location » for the monthly amount → le loyer (la location is the act of renting, or the rented place).
 - « le premier étage » is one floor up; the ground floor is le rez-de-chaussée.
